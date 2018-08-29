@@ -77,7 +77,7 @@ server {
   }
 }
 ```
-For any requests, the auth_request performs http subrequest authentication to /auth, which is proxied to the nginx-keystone-auth daemon. If the user is not authorized, browser is redirected to the login page. Once logged in, a authentication cookie is generated for the browser. Any subsequent requests are authorized until the cookie expires.
+For any requests, the auth_request performs http subrequest authentication to /auth, which is proxied to the nginx-keystone-auth daemon. If the user is not authorized, browser is redirected to the login page. Once logged in, an authentication cookie is generated for the browser. Any subsequent requests are authorized until the cookie expires.
 
 9. Restart/reload nginx
 ```shell
