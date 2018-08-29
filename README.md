@@ -89,7 +89,7 @@ sudo systemctl restart nginx
 ## Authentication Cookie Generation
 An authenication cookie is named _nginxauth_ (configurable) and encoded in Base64.
 ```
-nginxauth = username + '|' + expires_time + '|' + digest.
+nginxauth = base64(username + '|' + expires_time + '|' + digest).
 digest = sha256(username + expires_time + randomkey)
 ```
 A session is timeout when the cookie has expired or browser is closed. User can manually request **/logout** to force cookie deletion.
