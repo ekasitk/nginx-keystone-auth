@@ -5,7 +5,7 @@ The nginx-keystone-auth allows other services to authenticate users with opensta
 When a browser request a web page from backend service, nginx makes an internal HTTP subrequest to the nginx-keystone-auth daemon, which communicates with keystone to validate user credential.
 
 
-![NGINX LDAP Architecture](https://cdn-1.wp.nginx.com/wp-content/uploads/2016/02/ldap-auth-components.jpg)
+<img src="flow.png">
 
 
 ## Installation and Configuration
